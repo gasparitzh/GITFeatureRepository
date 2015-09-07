@@ -1,0 +1,18 @@
+﻿<repository
+name="GitTestRepository"
+id="95dd4a3c-dd74-46b7-8c15-1bc7765aac70"
+rxversion="6.0.0.25525">
+  <codegen
+  classname="GitTestRepository"
+  namespace="GitTest"/>
+  <rootfolder
+  name="Root"
+  id="4e1bc2a3-70b1-4b38-ade4-7b013487f2b7"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
