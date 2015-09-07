@@ -79,9 +79,31 @@ namespace GitTest
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://www.ranorex.com' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Local.OpenBrowser("http://www.ranorex.com", "chrome", "", false, false, false, false, false);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=18,Width=46,Height=47}) on item 'AutomatedTestingSoftwareRanorexT.HttpWwwRanorexCom'.", repo.AutomatedTestingSoftwareRanorexT.HttpWwwRanorexComInfo, new RecordItemIndex(1));
+            Validate.ContainsImage(repo.AutomatedTestingSoftwareRanorexT.HttpWwwRanorexComInfo, HttpWwwRanorexCom_Screenshot1, HttpWwwRanorexCom_Screenshot1_Options);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AutomatedTestingSoftwareRanorexT.DownloadFreeTrial' at 42;31.", repo.AutomatedTestingSoftwareRanorexT.DownloadFreeTrialInfo, new RecordItemIndex(2));
+            repo.AutomatedTestingSoftwareRanorexT.DownloadFreeTrial.Click("42;31");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FreeTrialRanorexAutomatedSoftwar.Schliessen' at 8;12.", repo.FreeTrialRanorexAutomatedSoftwar.SchliessenInfo, new RecordItemIndex(3));
+            repo.FreeTrialRanorexAutomatedSoftwar.Schliessen.Click("8;12");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
+        CompressedImage HttpWwwRanorexCom_Screenshot1
+        { get { return repo.AutomatedTestingSoftwareRanorexT.HttpWwwRanorexComInfo.GetScreenshot1(new Rectangle(0, 18, 46, 47)); } }
+
+        Imaging.FindOptions HttpWwwRanorexCom_Screenshot1_Options
+        { get { return Imaging.FindOptions.Default; } }
+
 #endregion
     }
 #pragma warning restore 0436
