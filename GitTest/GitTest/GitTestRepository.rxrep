@@ -2,17 +2,186 @@
 name="GitTestRepository"
 id="95dd4a3c-dd74-46b7-8c15-1bc7765aac70"
 rxversion="6.0.0.25525">
-  <codegen
-  classname="GitTestRepository"
-  namespace="GitTest"/>
-  <rootfolder
-  name="Root"
-  id="4e1bc2a3-70b1-4b38-ade4-7b013487f2b7"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="GitTestRepository"
+	namespace="GitTest"/>
+	<rootfolder
+	name="Root"
+	id="4e1bc2a3-70b1-4b38-ade4-7b013487f2b7"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="AutomatedTestingSoftwareRanorexT"
+		id="2114d446-2740-487d-a3eb-34718918277a"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='www.ranorex.com']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="HttpWwwRanorexCom"
+			id="1282ca4e-324a-45d5-93b9-2c3b17a6ab39"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.ranorex.com']//div[#'container-nav']/a[@href='http://www.ranorex.com/']"
+			addcaps="unknown,webelement,atag"
+			refimgid="e4df6b6d-c1db-4286-9830-69a9dcd769e3">
+				<image
+				name="Screenshot1"
+				guid="8052c325-bd38-4750-b6bf-6583ca835760">
+					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
+				</image>
+				/dom[@domain='www.ranorex.com']//div[#'container-nav']/a[@href='http://www.ranorex.com/']
+			</item>
+			<item
+			name="DownloadFreeTrial"
+			id="938daada-2bec-490b-8040-ac0facd9df07"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.ranorex.com']//div[#'container-lp']/div/a[@innertext='Download Free Trial']"
+			addcaps="unknown,webelement,atag"
+			refimgid="aa07c12b-467e-46aa-a297-3a39a6cc6d75">
+				/dom[@domain='www.ranorex.com']//div[#'container-lp']/?/?/a[@innertext='Download Free Trial']
+			</item>
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="FreeTrialRanorexAutomatedSoftwar"
+		id="9dbad5fb-e07a-443d-b68d-e6350252365a"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Free Trial | Ranorex - Automated Software Testing Tool - Google Chrome']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Schliessen"
+			id="8ce8cb32-20ec-4929-9732-fe2edbb885fe"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title~'^Free\ Trial\ \|\ Ranorex\ -\ Au']/container/container[2]/container[3]/tabpagelist/tabpage/button[@accessiblename='Schließen']"
+			addcaps="button,accessible"
+			refimgid="d711d169-c559-4d4e-8f76-38a643c25346">
+				/form[@title~'^Free\ Trial\ \|\ Ranorex\ -\ Au']/container[@accessiblename='Google Chrome']//tabpage[@accessiblename~'^Free\ Trial\ \|\ Ranorex\ -\ Au']/button[@accessiblename='Schlie&#223;en']
+			</item>
+			<basepath>
+				/form[@title~'^Free\ Trial\ \|\ Ranorex\ -\ Au']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKeSURBVDhPrZNdSJNRGMffEs2sMFvTEkMwt7Rs
+9so+3m3tdUxwX3qRXWhJRtkugq4sqwtv0sCbQEIaIhFohqRphboMNz+I0Vh+bOo0tLbWpqATKaIo
+2Px3fFmoIEHQHx4OHJ7/7znPc86h/rvmWDE9b1BZvWVa+C8Y4CvX4+MZDeYKpFaPXERH07bXTI7A
+PCvLxYcCGUKleqycN5LVgOUSLeZVefDkZmNScNQcTd+qhZhk80x6OoJyCRZYBgsaBRbVDBZZGRaV
+DIISKQIiGi5+GibiDm+FiDvltMkkxNIhAQJZx+EXChE4korVinMIndXCx6bAp8qAVyWETynARBYf
+nrLEjXaYdoXtVB+L3hMZ+MxLw1K+BliLwLEKOL+AaA2ro2KE7Hvw1Z2IkJPCspOyRe0UpWiTQzdi
+RPlNGh4qdt2BkuZZVLbMwtT6HlVP/RwEkxQi07GITMUjNEIhaqco5WM5igb0UA8WouViMfrmw2Dr
+3qK0cYzEONR1DnSOEYZfjbB7J8KTBDC8CSB/xKD4tR66gUJc77qCHtcPCG8MQllrx2kSwuohtDrC
+WwBLtk0AWZMMRf16GPu1YPsYrgX+5Q4cMHWCR2J/5XNuDy6KmOM4QNASswEQN0hsqidKDqK1aHDV
+fonLb7cG0GYL4jsp/s1zEmtuMgPS/8rwDni7d28MUVQrpqX3pSjq0ZFT6DhIfi+DmolqXHtzC3fb
++cD0evVd+DW+D5+64+Fp2XSN68q5Q5slBGJ8QSAWPQykHc2rQpQ8U5DpxwDuBPx0JsHblQD3w4Pb
+v8asGtpM14uhbCLX2qWDrMOIqaE0RBw8BF7uJVWT8O5ByvbmP8qsEtHHbudaM2vyUFGfDV9zEkYb
+k+FoSLHa76X+/TP9uyjqN7VXpWEUY74GAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

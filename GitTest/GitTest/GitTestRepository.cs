@@ -27,6 +27,8 @@ namespace GitTest
     public partial class GitTestRepository : RepoGenBaseFolder
     {
         static GitTestRepository instance = new GitTestRepository();
+        GitTestRepositoryFolders.AutomatedTestingSoftwareRanorexTAppFolder _automatedtestingsoftwareranorext;
+        GitTestRepositoryFolders.FreeTrialRanorexAutomatedSoftwarAppFolder _freetrialranorexautomatedsoftwar;
 
         /// <summary>
         /// Gets the singleton class instance representing the GitTestRepository element repository.
@@ -43,6 +45,8 @@ namespace GitTest
         public GitTestRepository() 
             : base("GitTestRepository", "/", null, 0, false, "4e1bc2a3-70b1-4b38-ade4-7b013487f2b7", ".\\RepositoryImages\\GitTestRepository4e1bc2a3.rximgres")
         {
+            _automatedtestingsoftwareranorext = new GitTestRepositoryFolders.AutomatedTestingSoftwareRanorexTAppFolder(this);
+            _freetrialranorexautomatedsoftwar = new GitTestRepositoryFolders.FreeTrialRanorexAutomatedSoftwarAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +64,24 @@ namespace GitTest
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The AutomatedTestingSoftwareRanorexT folder.
+        /// </summary>
+        [RepositoryFolder("2114d446-2740-487d-a3eb-34718918277a")]
+        public virtual GitTestRepositoryFolders.AutomatedTestingSoftwareRanorexTAppFolder AutomatedTestingSoftwareRanorexT
+        {
+            get { return _automatedtestingsoftwareranorext; }
+        }
+
+        /// <summary>
+        /// The FreeTrialRanorexAutomatedSoftwar folder.
+        /// </summary>
+        [RepositoryFolder("9dbad5fb-e07a-443d-b68d-e6350252365a")]
+        public virtual GitTestRepositoryFolders.FreeTrialRanorexAutomatedSoftwarAppFolder FreeTrialRanorexAutomatedSoftwar
+        {
+            get { return _freetrialranorexautomatedsoftwar; }
+        }
     }
 
     /// <summary>
@@ -68,6 +90,199 @@ namespace GitTest
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "6.0.0")]
     public partial class GitTestRepositoryFolders
     {
+        /// <summary>
+        /// The AutomatedTestingSoftwareRanorexTAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2114d446-2740-487d-a3eb-34718918277a")]
+        public partial class AutomatedTestingSoftwareRanorexTAppFolder : RepoGenBaseFolder
+        {
+            HttpWwwRanorexComInfoClass _httpwwwranorexcomInfo;
+            RepoItemInfo _downloadfreetrialInfo;
+
+            /// <summary>
+            /// Creates a new AutomatedTestingSoftwareRanorexT  folder.
+            /// </summary>
+            public AutomatedTestingSoftwareRanorexTAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AutomatedTestingSoftwareRanorexT", "/dom[@domain='www.ranorex.com']", parentFolder, 30000, null, false, "2114d446-2740-487d-a3eb-34718918277a", "")
+            {
+                _httpwwwranorexcomInfo = new HttpWwwRanorexComInfoClass(this);
+                _downloadfreetrialInfo = new RepoItemInfo(this, "DownloadFreeTrial", ".//div[#'container-lp']/?/?/a[@innertext='Download Free Trial']", 30000, null, "938daada-2bec-490b-8040-ac0facd9df07");
+            }
+
+            /// <summary>
+            /// The HttpWwwRanorexComInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("1282ca4e-324a-45d5-93b9-2c3b17a6ab39")]
+            public class HttpWwwRanorexComInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// HttpWwwRanorexComInfoClass class constructor.
+                /// </summary>
+                public HttpWwwRanorexComInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "HttpWwwRanorexCom", ".//div[#'container-nav']/a[@href='http://www.ranorex.com/']", 30000, null, "1282ca4e-324a-45d5-93b9-2c3b17a6ab39")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("8052c325-bd38-4750-b6bf-6583ca835760")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("8052c325-bd38-4750-b6bf-6583ca835760");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("8052c325-bd38-4750-b6bf-6583ca835760")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("8052c325-bd38-4750-b6bf-6583ca835760", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2114d446-2740-487d-a3eb-34718918277a")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2114d446-2740-487d-a3eb-34718918277a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HttpWwwRanorexCom item.
+            /// </summary>
+            [RepositoryItem("1282ca4e-324a-45d5-93b9-2c3b17a6ab39")]
+            public virtual Ranorex.ATag HttpWwwRanorexCom
+            {
+                get
+                {
+                    return _httpwwwranorexcomInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HttpWwwRanorexCom item info.
+            /// </summary>
+            [RepositoryItemInfo("1282ca4e-324a-45d5-93b9-2c3b17a6ab39")]
+            public virtual HttpWwwRanorexComInfoClass HttpWwwRanorexComInfo
+            {
+                get
+                {
+                    return _httpwwwranorexcomInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DownloadFreeTrial item.
+            /// </summary>
+            [RepositoryItem("938daada-2bec-490b-8040-ac0facd9df07")]
+            public virtual Ranorex.ATag DownloadFreeTrial
+            {
+                get
+                {
+                    return _downloadfreetrialInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DownloadFreeTrial item info.
+            /// </summary>
+            [RepositoryItemInfo("938daada-2bec-490b-8040-ac0facd9df07")]
+            public virtual RepoItemInfo DownloadFreeTrialInfo
+            {
+                get
+                {
+                    return _downloadfreetrialInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FreeTrialRanorexAutomatedSoftwarAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9dbad5fb-e07a-443d-b68d-e6350252365a")]
+        public partial class FreeTrialRanorexAutomatedSoftwarAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _schliessenInfo;
+
+            /// <summary>
+            /// Creates a new FreeTrialRanorexAutomatedSoftwar  folder.
+            /// </summary>
+            public FreeTrialRanorexAutomatedSoftwarAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FreeTrialRanorexAutomatedSoftwar", "/form[@title~'^Free\\ Trial\\ \\|\\ Ranorex\\ -\\ Au']", parentFolder, 30000, null, true, "9dbad5fb-e07a-443d-b68d-e6350252365a", "")
+            {
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "container[@accessiblename='Google Chrome']//tabpage[@accessiblename~'^Free\\ Trial\\ \\|\\ Ranorex\\ -\\ Au']/button[@accessiblename='Schließen']", 30000, null, "8ce8cb32-20ec-4929-9732-fe2edbb885fe");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9dbad5fb-e07a-443d-b68d-e6350252365a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9dbad5fb-e07a-443d-b68d-e6350252365a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("8ce8cb32-20ec-4929-9732-fe2edbb885fe")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("8ce8cb32-20ec-4929-9732-fe2edbb885fe")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
